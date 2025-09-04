@@ -335,7 +335,8 @@ nav .desktop-nav {
   margin-top: 24px;
   width: 100px;
   height: 100px;
-  background: url("/src/assets/images/polygon.png") no-repeat center/contain;
+  background: url("/src/assets/images/skills/polygon.png") no-repeat
+    center/contain;
   position: relative;
   justify-self: center;
 }
