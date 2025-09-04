@@ -1,3 +1,6 @@
+import triviaAppImage from "/src/assets/images/projects/project-trivia.png";
+import weatherAppImage from "/src/assets/images/projects/project-weather.png";
+
 export default function Projects() {
   const projects = [
     {
@@ -6,7 +9,7 @@ export default function Projects() {
         "A React app that provides weather information based on user input.",
       link: "https://mohrasooli.github.io/weather-app/",
       github: "https://github.com/MohRasooli/weather-app",
-      image: "https://placehold.co/265x165/EEE/31343C",
+      image: weatherAppImage,
     },
     {
       name: "Trivia App",
@@ -14,7 +17,7 @@ export default function Projects() {
         "A quiz application built with React, featuring multiple categories and difficulty levels.",
       link: "https://mohrasooli.github.io/trivia-app/",
       github: "https://github.com/MohRasooli/trivia-app",
-      image: "https://placehold.co/265x165/EEE/31343C",
+      image: triviaAppImage,
     },
   ];
 
