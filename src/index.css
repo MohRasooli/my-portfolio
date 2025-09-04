@@ -130,6 +130,7 @@ nav .desktop-nav {
   flex-direction: column;
   gap: 0.5rem;
   min-width: 90px;
+  z-index: 1000;
 }
 
 .menu a {
@@ -324,11 +325,13 @@ nav .desktop-nav {
   gap: 1rem;
   width: 100%;
   margin-bottom: 32px;
+  justify-items: center;
 }
 
 .skills-list p {
   margin-top: 12px;
   font-size: 18px;
+  text-align: center;
 }
 
 .skill-icon {
