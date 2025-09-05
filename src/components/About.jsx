@@ -1,4 +1,5 @@
 import mainImage from "/src/assets/images/main-about-image.png";
+import resume from "/Mohammad_Rasooli_Resume.pdf";
 
 export default function About() {
   return (
@@ -15,11 +16,7 @@ export default function About() {
             I’m a Computer Science student and web developer who loves turning
             ideas into clean, responsive, and user-friendly websites.
           </p>
-          <a
-            className="about-resume"
-            href="./Mohammad_Rasooli_Resume.pdf"
-            download
-          >
+          <a className="about-resume" href={resume} download>
             Download My Resume (PDF)
           </a>
         </section>
