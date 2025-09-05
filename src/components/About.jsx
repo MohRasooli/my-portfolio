@@ -15,6 +15,13 @@ export default function About() {
             I’m a Computer Science student and web developer who loves turning
             ideas into clean, responsive, and user-friendly websites.
           </p>
+          <a
+            className="about-resume"
+            href="./Mohammad_Rasooli_Resume.pdf"
+            download
+          >
+            Download My Resume (PDF)
+          </a>
         </section>
       </section>
     </>

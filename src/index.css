@@ -262,6 +262,29 @@ nav .desktop-nav {
   color: hsla(0, 0%, 0%, 0.7);
 }
 
+.about-resume {
+  text-align: center;
+  display: inline-block;
+  background-color: var(--main-red-color);
+  color: var(--main-white-color);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  max-width: 320px;
+  min-width: 250px;
+  padding: 15px 10px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 14px;
+  transition: transform 0.5s ease;
+}
+
+.about-resume:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
 @media (min-width: 1024px) {
   .about {
     flex-direction: row-reverse;
