@@ -17,10 +17,10 @@ export default function Contact() {
           <a href="mailto:mohrasooli.dev@gmail.com" className="contact-link">
             mohrasooli.dev@gmail.com
           </a>
-          <p>or</p>
+          {/* <p>or</p>
           <a href="mailto:rasooli112233@gmail.com" className="contact-link">
             rasooli112233@gmail.com
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

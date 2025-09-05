@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-social">
           <p>My social media links:</p>
           <div className="links-images">
-            <a /* download={true} */>
+            <a>
               <img src={whatsAppLogo} alt="LinkedIn" />
             </a>
             <a
