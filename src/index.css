@@ -218,9 +218,6 @@ nav .desktop-nav {
         rgba(79, 71, 200, 0.07) 0%,
         transparent 50%
       );
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top right, top left;
   }
 }
 
@@ -270,6 +267,17 @@ nav .desktop-nav {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 80px;
+
+    background: radial-gradient(
+        circle at top right,
+        rgba(29, 213, 208, 0.1) 10%,
+        transparent 30%
+      ),
+      radial-gradient(
+        circle at top left,
+        rgba(79, 71, 200, 0.07) 10%,
+        transparent 30%
+      );
   }
   .about-info p {
     max-width: 75%;
