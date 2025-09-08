@@ -43,6 +43,10 @@ nav .mobile-nav {
   background-color: var(--nav-bg);
   box-shadow: 1px 3px 4px 0 hsla(0, 0%, 0%, 0.17);
   min-height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
 }
 
 nav .desktop-nav {
@@ -153,6 +157,18 @@ nav .desktop-nav {
   border-radius: 0 0 8px 8px;
 }
 
+@media (max-width: 649px) {
+  .about {
+    margin-top: 70px;
+  }
+  section,
+  .projects,
+  .about,
+  .skills,
+  .contact {
+    scroll-margin-top: 50px;
+  }
+}
 @media (min-width: 650px) {
   .mobile-nav {
     display: none;
@@ -168,15 +184,6 @@ nav .desktop-nav {
 }
 
 @media (min-width: 1024px) {
-  .mobile-nav {
-    display: none;
-  }
-
-  .desktop-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
   .desktop-nav ul {
     padding-inline: 80px;
   }

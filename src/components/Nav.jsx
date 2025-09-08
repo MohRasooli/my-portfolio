@@ -1,7 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const mobileMenu = useRef(null);
+
+  function handleMenuClose(e) {
+    if (isNavOpen && !mobileMenu.current.contains(e.target)) {
+      setIsNavOpen(false);
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("click", handleMenuClose);
+    return () => {
+      document.removeEventListener("click", handleMenuClose);
+    };
+  }, [isNavOpen]);
 
   function handleNav() {
     setIsNavOpen((prev) => !prev);
@@ -35,7 +49,7 @@ export default function Nav() {
         </ul>
       </div>
       <div className="mobile-nav">
-        <button className="hamburger-menu" onClick={handleNav}>
+        <button ref={mobileMenu} className="hamburger-menu" onClick={handleNav}>
           <span></span>
           <span></span>
           <span></span>
